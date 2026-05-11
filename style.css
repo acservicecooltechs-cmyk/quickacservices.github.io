@@ -148,3 +148,26 @@ footer{
   color:#00e676;
   font-weight:bold;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  header h1{
+    font-size:30px;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+}
