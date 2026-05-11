@@ -6,53 +6,160 @@
 <title>Quick AC Services - Hyderabad</title>
 
 <style>
-body {margin:0;font-family:Arial;background:#f4f9ff;}
-header {background:#0077cc;color:white;text-align:center;padding:20px;}
-nav {background:#222;text-align:center;padding:10px;}
-nav a {color:white;margin:10px;text-decoration:none;font-weight:bold;}
 
-.hero {
-  background:url('hero.jpg') no-repeat center/cover;
-  color:white;
-  padding:100px 20px;
-  text-align:center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.btn {
-  background:#25D366;
-  color:white;
-  padding:14px 25px;
-  text-decoration:none;
-  border-radius:6px;
-  display:inline-block;
-  margin-top:15px;
-  font-size:16px;
+body{
+  font-family:Arial,sans-serif;
+  background:#f1f5f9;
+  color:#222;
 }
 
-section {padding:25px;}
+/* HEADER */
 
-.card {
-  background:white;
+header{
+  background:#0f172a;
+  color:white;
   padding:20px;
-  margin:15px 0;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  text-align:center;
 }
 
-img {
-  width:100%;
-  border-radius:10px;
+header h1{
+  font-size:42px;
+}
+
+header p{
   margin-top:10px;
+  font-size:18px;
 }
 
-footer {
-  background:#222;
+/* NAVBAR */
+
+nav{
+  background:#1e293b;
+  padding:15px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:15px;
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* HERO */
+
+.hero{
+  background:
+  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
   color:white;
   text-align:center;
-  padding:15px;
+  padding:160px 20px;
 }
 
-.highlight {color:#0077cc;font-weight:bold;}
+.hero h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:24px;
+  margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.btn{
+  background:#00c853;
+  color:white;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:20px;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00a844;
+}
+
+/* SECTION */
+
+section{
+  padding:50px 20px;
+}
+
+/* CARD */
+
+.card{
+  background:white;
+  max-width:1000px;
+  margin:auto;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* SERVICES */
+
+.services-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.service-box{
+  background:#f8fafc;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+}
+
+/* IMAGE */
+
+img{
+  width:100%;
+  border-radius:15px;
+  margin-top:25px;
+}
+
+/* CONTACT */
+
+.contact p{
+  margin:12px 0;
+  font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+.highlight{
+  color:#00e676;
+  font-weight:bold;
+}
+
 </style>
 </head>
 
@@ -60,7 +167,7 @@ footer {
 
 <header>
   <h1>Quick AC Services</h1>
-  <p>Quick Home AC Service in 2 Hours</p>
+  <p>Fast Home AC Service in Hyderabad</p>
 </header>
 
 <nav>
@@ -69,48 +176,114 @@ footer {
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO -->
+
 <div class="hero">
+
   <h1>Fast & Reliable AC Service</h1>
-  <p>Agent will reach in <span class="highlight">60 Minutes</span></p>
-  <a class="btn" href="https://wa.me/919986562113">📞 Book on WhatsApp</a>
+
+  <p>
+    Expert AC Technicians Reach Within
+    <span class="highlight">60 Minutes</span>
+  </p>
+
+  <a class="btn" href="https://wa.me/919986562113">
+    📞 Book on WhatsApp
+  </a>
+
 </div>
 
+<!-- SERVICES -->
+
 <section id="services">
+
   <div class="card">
+
     <h2>Our Services</h2>
-    <ul>
-      <li>AC Repair</li>
-      <li>AC Installation</li>
-      <li>Gas Filling</li>
-      <li>AC Cleaning</li>
-      <li>Maintenance Service</li>
-    </ul>
-    <img src="service.jpg" alt="AC Service">
+
+    <div class="services-list">
+
+      <div class="service-box">❄ AC Repair</div>
+
+      <div class="service-box">🛠 AC Installation</div>
+
+      <div class="service-box">💨 Gas Filling</div>
+
+      <div class="service-box">🧼 AC Cleaning</div>
+
+      <div class="service-box">⚡ Maintenance</div>
+
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1400&auto=format&fit=crop" alt="AC Service">
+
   </div>
+
 </section>
+
+<!-- ABOUT -->
 
 <section id="about">
+
   <div class="card">
+
     <h2>About Us</h2>
-    <p>We are <b>Quick AC Services</b> in Hyderabad with <b>5+ years experience</b> in AC repair and maintenance.</p>
-    <p>We provide fast, reliable, and affordable doorstep service with customer satisfaction as our priority.</p>
+
+    <br>
+
+    <p>
+      We are <b>Quick AC Services</b> in Hyderabad with
+      <b>5+ years experience</b> in AC repair,
+      installation and maintenance.
+    </p>
+
+    <br>
+
+    <p>
+      We provide fast, reliable and affordable
+      doorstep AC service with expert technicians.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1400&auto=format&fit=crop" alt="Technician">
+
   </div>
+
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
-  <div class="card">
+
+  <div class="card contact">
+
     <h2>Contact Us</h2>
+
+    <br>
+
     <p>📞 Phone: 9986562113</p>
+
     <p>💬 WhatsApp: 9986562113</p>
+
     <p>📧 Email: quickacservice@gmail.com</p>
-    <p>📍 Location: Hyderabad</p>
-    <p><b>Service Time:</b> Within 60 minutes</p>
-    <a class="btn" href="https://wa.me/919986562113">Book Now</a>
+
+    <p>📍 Hyderabad</p>
+
+    <p><b>Service Time:</b> Within 60 Minutes</p>
+
+    <br>
+
+    <a class="btn" href="https://wa.me/919986562113">
+      Book Now
+    </a>
+
   </div>
+
 </section>
 
 <footer>
+
   <p>© 2026 Quick AC Services | Hyderabad</p>
+
 </footer>
 
 </body>
