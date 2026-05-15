@@ -115,11 +115,9 @@ section{
 
 .service-box{
   background:#f8fafc;
-  padding:20px;
+  padding:25px;
   border-radius:12px;
   text-align:center;
-  font-size:18px;
-  font-weight:bold;
   transition:0.3s;
 }
 
@@ -128,12 +126,16 @@ section{
   box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
+.service-box h3{
+  font-size:22px;
+  margin-bottom:12px;
+  color:#0f172a;
+}
+
 .price{
-  display:block;
-  margin-top:10px;
-  font-size:16px;
   color:#00c853;
-  font-weight:700;
+  font-size:20px;
+  font-weight:bold;
 }
 
 img{
