@@ -80,6 +80,7 @@ nav a{
   font-size:20px;
   display:inline-block;
   transition:0.3s;
+  margin:10px;
 }
 
 .btn:hover{
@@ -119,6 +120,20 @@ section{
   text-align:center;
   font-size:18px;
   font-weight:bold;
+  transition:0.3s;
+}
+
+.service-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.price{
+  display:block;
+  margin-top:10px;
+  font-size:16px;
+  color:#00c853;
+  font-weight:700;
 }
 
 img{
